@@ -1,0 +1,29 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>تسجيل الدخول</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+  <ion-card style="margin: 0px; border: none; width: 100%;">
+    <img src="./assets/images/24.jpg" />
+  </ion-card>
+
+  <ion-list>
+    <ion-item>
+      <ion-label floating>Username</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label floating>Password</ion-label>
+      <ion-input type="password"></ion-input>
+    </ion-item>
+  </ion-list>
+
+  <button ion-button block color="fabColor" (click)="login()" >Login</button>
+  <button ion-button clear block color="danger">No Account? Take it from School</button>
+
+</ion-content>

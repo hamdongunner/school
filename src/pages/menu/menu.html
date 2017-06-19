@@ -1,0 +1,75 @@
+<ion-menu [content]="content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>Menu</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content class="card-background-page">
+
+    <ion-card>
+      <img src="./assets/images/23.jpg" />
+      <div class="card-title">مدرسة النخيل</div>
+      <div class="card-subtitle">لافضل تعليم</div>
+    </ion-card>
+
+
+
+<button menuClose ion-item text-wrap> 
+  <ion-icon name="home" item-left large></ion-icon>    
+   <h2>الصفحة الرئيسية</h2>
+   <p>الرجوع للصفحة الاولى</p>
+</button>
+
+<button menuClose ion-item text-wrap (click)="GoToTable()">
+  <ion-icon name="md-grid" item-left large></ion-icon>
+   <h2> الجدول</h2>
+   <p>الجدول الاسبوعي لمواد الطالب</p>
+</button>
+
+<button menuClose ion-item text-wrap (click)="GoToAction()" >
+  <ion-icon name="md-bicycle" item-left large></ion-icon>  
+   <h2>النشاط</h2>
+   <p>كل ما سيحدث من نشاطات مستقبلية</p>
+</button>
+
+<button menuClose ion-item text-wrap (click)="GoToDgree()" >
+  <ion-icon name="md-trending-up" item-left large></ion-icon>    
+   <h2>الدرجات</h2>
+   <p>درجات الفصلية للطالب</p>
+</button>
+
+<button menuClose ion-item text-wrap (click)="GoToAbsence()" >
+  <ion-icon name="md-walk" item-left large></ion-icon>    
+   <h2> الحضور</h2>
+   <p>حضور الطالب لمدة هذا الشهر</p>
+</button>
+
+<button menuClose ion-item text-wrap (click)="GoToHomeWork()" >
+  <ion-icon name="ios-paper" item-left large></ion-icon>    
+   <h2>الواجبات</h2>
+   <p>واجبات اليومية للطالب</p>
+</button>
+
+<button menuClose ion-item text-wrap (click)="GoToPhoto()">
+  <ion-icon name="ios-images" item-left large></ion-icon>    
+   <h2>الصور</h2>
+   <p>صور الطالب و الصور المدرسية</p>
+</button>
+
+<button menuClose ion-item text-wrap (click)="GoToNotification()"> 
+  <ion-icon name="ios-information-circle-outline" item-left large></ion-icon>    
+   <h2>الاشعارات</h2>
+   <p>اشعارات و تنبيهات من قبل الادارة</p>
+</button>
+
+<button menuClose ion-item text-wrap> 
+  <ion-icon name="md-planet" item-left large></ion-icon>    
+   <h2>About Manufacturers</h2>
+   <p>معلومات عن الشركة المنتجة للتطبيق </p>
+</button>
+
+  </ion-content>
+</ion-menu>
+
+<ion-nav #content [root]="homePage"></ion-nav>
